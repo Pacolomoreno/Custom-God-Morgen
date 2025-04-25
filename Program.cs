@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Console.Clear();
+        Console.Clear();
         DateTime tid = DateTime.Now;
         String? person = "";
         Boolean validName = false;
@@ -33,7 +33,7 @@ class Program
             else
             {
                 Console.Clear();
-                Console.WriteLine("Thats Not a Valid Name");
+                Console.WriteLine("Tuller du? Den er ikke en gyldig navn ! Kom igjen :");
             }
 
         }
@@ -47,7 +47,7 @@ class Program
         { tidOmrade = "Kveld"; }
         else
         { tidOmrade = "Night"; }
-        Console.WriteLine($"!!!Good {tidOmrade} {person}!!!");
+        Console.WriteLine($"!!!God {tidOmrade} {person}!!!");
 
         // Input oppgave
         while (!(validValg.Contains(valg)))
@@ -59,7 +59,7 @@ class Program
             if (!(validValg.Contains(valg)))
             {
                 Console.Clear();
-                Console.WriteLine("Not an option! try again....");
+                Console.WriteLine("Den er ikke en riktiv valg, Prøv på nytt!....");
             }
         }
 
@@ -82,7 +82,7 @@ class Program
                 break;
         }
 
-        Console.WriteLine($"Ohh! Så du skal start {oppgave} ...");
+        Console.WriteLine($"Ohh! Så du skal begynne {oppgave} ...");
         Console.WriteLine($"{oppgaver[oppgave]}");
 
 
